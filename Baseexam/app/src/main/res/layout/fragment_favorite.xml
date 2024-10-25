@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.fragment.FragmentFavorite">
+
+    <!-- EditText para introducir el nombre -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Introduce un nombre"
+        android:inputType="textPersonName" />
+
+    <!-- Botón para predecir género y edad -->
+    <Button
+        android:id="@+id/btnPredictGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predecir Género y Edad"
+        android:layout_gravity="center"
+        android:paddingTop="16dp" />
+
+    <!-- TextView para mostrar el resultado del género y edad -->
+    <TextView
+        android:id="@+id/tvGenderResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <!-- ImageView para mostrar la imagen de joven, adulto o anciano -->
+    <ImageView
+        android:id="@+id/ivAgeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

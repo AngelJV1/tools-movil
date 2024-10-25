@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context="com.example.fragment.FragmentHome">
+
+    <!-- Imagen del usuario -->
+
+    <!-- Nombre del usuario -->
+
+    <ImageView
+        android:id="@+id/myPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/my_photo" />
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/ngel_victoriano"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/myDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/gmail"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/myDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/numero"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+</LinearLayout>

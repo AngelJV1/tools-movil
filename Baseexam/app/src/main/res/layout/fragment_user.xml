@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.fragment.FragmentUser">
+
+    <!-- Spinner para seleccionar el país -->
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Botón para mostrar universidades -->
+    <Button
+        android:id="@+id/btnShowUniversities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Universidades"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView para mostrar el listado de universidades -->
+    <TextView
+        android:id="@+id/tvUniversities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Universidades:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

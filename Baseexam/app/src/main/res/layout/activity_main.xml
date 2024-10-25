@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <!-- ViewPager2 for swiping between fragments -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <!-- FrameLayout to hold the weather information fragment -->
+    <FrameLayout
+        android:id="@+id/weatherInfoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:elevation="10dp"/>
+
+    <!-- Bottom navigation wrapped inside a CardView for styling -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        android:translationZ="10dp"
+        app:cardCornerRadius="200dp"
+        tools:ignore="MissingClass">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            app:itemIconTint="@color/color_item_botton_nav"
+            app:itemTextColor="@color/color_item_botton_nav"
+            app:menu="@menu/menu_bottom_nav" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
